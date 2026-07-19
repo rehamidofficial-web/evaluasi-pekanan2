@@ -1,0 +1,357 @@
+/* Reset Dasar Browser */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kombinasi Warna: Vintage Parchment, Charcoal Black, Crimson Red Accent */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f4f1ea; /* Kesan lawas warna kertas koran/perkamen tua */
+    color: #1a1a1a; /* Hitam arang bidak catur yang tajam */
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    color: #111111;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    border-bottom: 2px solid #8b0000; /* Garis merah marun darah lambang gaya agresif */
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+p {
+    margin-bottom: 18px;
+    text-align: justify;
+    font-size: 1.08rem;
+}
+
+strong {
+    color: #8b0000;
+}
+
+mark {
+    background-color: #e3dac9;
+    color: #8b0000;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+/* Navigasi Header */
+header {
+    background-color: #1a1a1a;
+    color: #f4f1ea;
+    padding: 20px 40px;
+    overflow: hidden;
+    display: block;
+}
+
+.logo {
+    float: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.logo i {
+    color: #cac6c6;
+    margin-right: 8px;
+}
+
+.logo span {
+    color: #c5a880; /* Warna perunggu kuno */
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #f4f1ea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #c5a880;
+    border-bottom: 2px solid #8b0000;
+}
+
+/* Pembungkus Konten Utama */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* Kotak Slogan (Hero Area) */
+.hero-box {
+    background-color: #e3dac9;
+    padding: 35px;
+    border-radius: 2px;
+    border-left: 6px solid #8b0000;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 1.15rem;
+    color: #2b2b2b;
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #c5a880;
+    text-align: left;
+}
+
+/* Desain Bentuk Kotak CSS (Card Grid Layout) Sesuai Gambar */
+.card-grid {
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.card {
+    width: 31%;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #d1c9bc;
+    padding: 25px;
+    margin-right: 3.5%;
+    box-shadow: 4px 4px 0px #1a1a1a; /* Bayangan retro tebal memberikan kesan hidup */
+    min-height: 240px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    color: #8b0000;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Elemen List */
+.list-box ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.list-box ul li {
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+/* Penataan Tabel */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #d1c9bc;
+}
+
+th, td {
+    padding: 12px 18px;
+    text-align: left;
+    border-bottom: 1px solid #d1c9bc;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: #f4f1ea;
+}
+
+tr:nth-child(even) {
+    background-color: #faf8f5;
+}
+
+/* Bingkai Iframe Media */
+.video-frame, .map-box {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border: 4px solid #1a1a1a;
+}
+
+.video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-box {
+    padding-bottom: 0;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Tata Letak Halaman Biografi */
+.bio-layout {
+    overflow: hidden;
+}
+
+.image-wrapper {
+    width: 35%;
+    float: left;
+    border: 3px solid #1a1a1a;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: sepia(40%) contrast(110%); /* Filter sepia agar hidup tapi bernuansa cetakan lama */
+}
+
+.bio-text {
+    width: 60%;
+    float: right;
+}
+
+/* Grid Halaman Kontak */
+.dual-grid {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.form-container-box {
+    width: 55%;
+    float: left;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #d1c9bc;
+}
+
+.info-card-box {
+    width: 40%;
+    float: right;
+    background-color: #e3dac9;
+    padding: 30px;
+    border: 1px solid #d1c9bc;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1a1a1a;
+    background-color: #fff;
+    font-family: inherit;
+}
+
+.radio-group-box label {
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a1a1a;
+}
+
+.contact-details {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.contact-details li {
+    margin-bottom: 12px;
+}
+
+.contact-details i {
+    color: #8b0000;
+    margin-right: 10px;
+}
+
+.contact-details a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer Tradisional */
+footer {
+    background-color: #1a1a1a;
+    color: #f4f1ea;
+    padding: 30px 20px;
+    text-align: center;
+    clear: both;
+    margin-top: 60px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #f4f1ea;
+    font-size: 1.3rem;
+    margin: 0 10px;
+}
